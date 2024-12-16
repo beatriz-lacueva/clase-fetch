@@ -1,5 +1,5 @@
 [
     { "nombre" : "Pilar", "edad" : 25 },
     { "nombre" : "Bea", "edad" : 24 },
-    { "nombre" : "Julio", "edad" : 28 },
+    { "nombre" : "Julio", "edad" : 28 }
 ]
