@@ -7,5 +7,24 @@
 </head>
 <body>
     <h1>Hola que tal</h1>
+    
+    <script>
+
+        // 1) Crear la conexión
+        const conexion = new XMLHttpRequest();
+
+        // 2) Configurar la conexión ---> URL | Método
+        conexion.open("GET", "prueba.txt");
+
+        // 3) Enviar petición a través de la conexión
+        conexion.send();
+        
+        // 4) Gestionar la respuesta del servidor
+        conexion.addEventListener("load", () => {
+            console.log(conexion.responseText);
+        });
+
+    </script>
+
 </body>
 </html>
