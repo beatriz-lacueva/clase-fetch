@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let datos = { r : 234, g : 100, b : 0 };
+
+        fetch("https://api-ejemplo-0mcf.onrender.com/colores"), {
+            method : "POST",
+            body : JSON.stringify(),
+            headers : {
+                "Content-type" : "application/json"
+            }
+        }
+        .then(respuesta => respuesta.json())
+        .then(colores => {
+            console.log(colores);
+        });
+
+    </script>
+</body>
+</html>
