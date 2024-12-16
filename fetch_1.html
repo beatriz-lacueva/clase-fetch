@@ -17,6 +17,14 @@
         })
         .then(personas => {
             console.log(personas);
+            // aqui es donde existen los datos
+            //crear un LI
+
+            for( let i = 0; i < personas.length; i++){
+                let li = document.createElement("li");
+                li.innerText = personas[i].nombre;
+                lista.appendChild(li);
+            }
         });
 
     </script>
