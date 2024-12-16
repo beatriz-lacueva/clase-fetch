@@ -18,10 +18,12 @@
 
         // 3) Enviar petición a través de la conexión
         conexion.send();
-        
+
         // 4) Gestionar la respuesta del servidor
         conexion.addEventListener("load", () => {
-            console.log(conexion.responseText);
+            console.log(conexion.responseText); // string con la respuesta del servidor
+            let datos = JSON.parse(conexion.responseText);
+            console.log(datos);
         });
 
     </script>
