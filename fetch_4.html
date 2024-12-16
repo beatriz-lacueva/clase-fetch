@@ -6,12 +6,18 @@
     <title>Document</title>
 </head>
 <body>
+    <ul></ul>
     <script>
 
+        const lista = document.querySelector("ul");
         fetch("https://api-ejemplo-0mcf.onrender.com/colores")
         .then(respuesta => respuesta.json())
         .then(colores => {
-            console.log(colores);
+            colores.forEach( color => {
+                let li = document.createElement("li");
+                li.innerText = [color.r,color.g,color.b].join(",");
+                lista.appendChild(li);
+            })
         });
 
     </script>
